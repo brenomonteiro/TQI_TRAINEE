@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "980745497251",
+    "firebase_url": "https://trainee-emprestimo.firebaseio.com",
+    "project_id": "trainee-emprestimo",
+    "storage_bucket": "trainee-emprestimo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980745497251:android:a02403ceae96538aadad16",
+        "android_client_info": {
+          "package_name": "com.example.emprestimo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980745497251-kchuvvkg27rfikvum0pt71uan6l4rk5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emprestimo",
+            "certificate_hash": "be128e9c6fc6cb340d3ee5eb8ae4c71bfc30f41c"
+          }
+        },
+        {
+          "client_id": "980745497251-4qkm95g37khmk89q1niu9vfkuhqa60m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgMLvly5DH6ZiFYWtRQuOwHWlXtvoc-Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980745497251-4qkm95g37khmk89q1niu9vfkuhqa60m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
