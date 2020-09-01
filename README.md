@@ -1,2 +1,2 @@
 # TQI_TRAINEE
-repositório destinado ao programa trainne tqi
+repositório destinado ao programa trainee tqi
