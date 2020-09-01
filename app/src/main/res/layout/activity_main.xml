@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.MainActivity">
+    android:background="#51AD3C"
+    tools:context=".activity.activity.MainActivity">
 
     <Button
         android:id="@+id/buttonLogin"
@@ -32,6 +33,8 @@
         android:ems="10"
         android:hint="Digite seu e-mail"
         android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +48,7 @@
         android:ems="10"
         android:hint="Digite sua senha"
         android:inputType="textPassword|textEmailAddress"
+        android:textColorHint="#F8F5F5"
         app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
         app:layout_constraintStart_toStartOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
@@ -55,6 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Não possui uma conta? Clique aqui e cadastre-se!"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />

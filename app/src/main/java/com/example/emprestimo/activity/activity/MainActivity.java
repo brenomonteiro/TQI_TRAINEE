@@ -1,4 +1,4 @@
-package com.example.emprestimo.activitys;
+package com.example.emprestimo.activity.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.emprestimo.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -51,26 +52,31 @@ public class MainActivity extends AppCompatActivity {
 
                  emailValue = editEmail.getText().toString();
                  senhaValue = editSenha.getText().toString();
-
-                 DatabaseReference usuarios = referenciaBD.child("usuarios");
-                 usuario.signInWithEmailAndPassword(emailValue,senhaValue).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
-                            startActivity(intent);
-                        }else{
-                            Log.i("user deslogado","usuario errado");
+                if(!emailValue.isEmpty() && !senhaValue.isEmpty()){
+                    DatabaseReference usuarios = referenciaBD.child("usuarios");
+                    usuario.signInWithEmailAndPassword(emailValue,senhaValue).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                                startActivity(intent);
+                            }else{
+                                Log.i("user deslogado","usuario errado");
+                            }
                         }
-                    }
-                });
+                    });
+                }else {
+                    Toast.makeText(MainActivity.this,"Erro ao logar",Toast.LENGTH_SHORT);
+
+                }
+
             }
         });
 
         linkCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),CadastroActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
                 startActivity(intent);
             }
         });

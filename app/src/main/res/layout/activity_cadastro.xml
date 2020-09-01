@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.CadastroActivity">
+    android:background="#51AD3C"
+    tools:context=".activity.activity.CadastroActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -16,49 +18,67 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite seu nome completo"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextCPF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite seu CPF"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editTextRG"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite seu RG"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite seu e-mail"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColorHint="#FFFFFF" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/editTextSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Digite sua senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="#FFFFFF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="validarCadastroUsuario"
             android:text="Cadastrar" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira os dados e cadastre-se!"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
