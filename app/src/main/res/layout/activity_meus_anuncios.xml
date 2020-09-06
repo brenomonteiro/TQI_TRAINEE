@@ -15,7 +15,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Caro cliente, ainda não é possível vizualizar seus pedidos de crédito, em breve isso será possíve:)"
+        android:text="Caro cliente, ainda não é possível visualizar seus pedidos de crédito, em breve isso será possível :)"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
