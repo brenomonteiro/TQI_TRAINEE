@@ -36,7 +36,7 @@ private Button enviar;
         if(!valorProposta.isEmpty()){
             salvarAnuncio();
         }else{
-            Toast.makeText(CadastroCreditoActivity.this,"digite o valor da sua proposta",Toast.LENGTH_SHORT);
+            Toast.makeText(CadastroCreditoActivity.this,"digite o valor da sua proposta",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -50,7 +50,7 @@ private Button enviar;
         Log.i("obj proposta2",proposta.getStatusProposta());
 
          proposta.salvar();
-        Toast.makeText(CadastroCreditoActivity.this,"proposta cadastrada com sucesso",Toast.LENGTH_SHORT);
+        Toast.makeText(CadastroCreditoActivity.this,"proposta cadastrada com sucesso",Toast.LENGTH_SHORT).show();
 
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#51AD3C"
+    android:background="@drawable/gradient"
     tools:context=".activity.activity.CadastroActivity">
 
     <LinearLayout
@@ -33,7 +33,7 @@
             android:ems="10"
             android:hint="Digite seu CPF"
             android:inputType="textPersonName"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/editTextRG"
@@ -42,7 +42,7 @@
             android:ems="10"
             android:hint="Digite seu RG"
             android:inputType="textPersonName"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -51,7 +51,7 @@
             android:ems="10"
             android:hint="Digite seu e-mail"
             android:inputType="textEmailAddress"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@android:color/black" />
 
         <EditText
             android:id="@+id/editTextSenha"
@@ -60,7 +60,7 @@
             android:ems="10"
             android:hint="Digite sua senha"
             android:inputType="textPassword"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="@android:color/black" />
 
         <Button
             android:id="@+id/buttonCadastrar"
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Insira os dados e cadastre-se!"
-        android:textColor="#FFFFFF"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"

@@ -61,12 +61,11 @@ public class MainActivity extends AppCompatActivity {
                                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                                 startActivity(intent);
                             }else{
-                                Log.i("user deslogado","usuario errado");
-                            }
+                                Toast.makeText(MainActivity.this,"Senha ou Login inválidos",Toast.LENGTH_SHORT).show();                            }
                         }
                     });
                 }else {
-                    Toast.makeText(MainActivity.this,"Erro ao logar",Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this,"Senha ou Login inválidos",Toast.LENGTH_SHORT).show();
 
                 }
 
